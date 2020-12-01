@@ -1,0 +1,56 @@
+/******************************************************************************
+
+Project Decisions, Decisions, Decisions
+Daniel Pickett Austin Marshburn Peter Machinni
+02/11/2020
+
+*******************************************************************************/
+#include <stdio.h>
+#include <stdbool.h>
+
+
+int userpartysize;
+int tablenumber2per;
+int tablenumber4per;
+int tablenumber6per;
+char userbar;
+int main()
+{
+    printf("Hello User");
+    printf("Please enter number of people dining tonight?");
+    scanf("%d", &userpartysize);
+    if userpartysize > 1;
+    {
+      if  userpartysize = 2;
+        {
+        tablenumber2per = rand (1 % 39) + 1;
+        printf("Here is table number: %d", tablenumber2per);
+        }
+      if  5 > userpartysize > 2;
+        {
+        tablenumber4per = rand (40 % 59) + 1;
+        printf("Here is table number: %d", tablenumber4per);
+        }
+      if  7 > userpartysize >= 5 ;
+        {
+        tablenumber4per = rand (60 % 79) + 1;
+        printf("Here is table number: %d", tablenumber6per);
+        }
+      if usersize >= 7
+        {
+        printf ("Please wait while a table is set up or procede to dine out section.");
+        }  
+      else
+        {
+        printf("Do you want a bar seat?");
+        scanf("%c", &userbar);
+        if bool userbar == TRUE
+        printf("Head to the Bar");
+        else
+        tablenumber2per = rand (1 % 39) + 1;
+        printf("Here is table number: %d", tablenumber2per);
+        
+        }
+    }
+    return 0;
+}
